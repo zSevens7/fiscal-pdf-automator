@@ -1,0 +1,25 @@
+# --- Arquivos do Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Ambiente Virtual ---
+venv/
+env/
+.venv/
+
+# --- IDEs (VS Code, etc) ---
+.vscode/
+.idea/
+
+# --- Pastas do Projeto (Dados) ---
+# Ignora todo o conteúdo das pastas, mas mantém a pasta no projeto se tiver um .gitkeep
+input/*
+output/*
+!input/.gitkeep
+!output/.gitkeep
+
+# --- Arquivos Temporários Específicos ---
+*.pdf
+temp_capa.pdf

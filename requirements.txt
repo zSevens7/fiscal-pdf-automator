@@ -1,0 +1,4 @@
+pdfplumber==0.10.3      # Melhor para extrair tabelas e textos de documentos fiscais
+PyPDF2==3.0.1           # Para fazer o merge (junção) dos arquivos
+reportlab==4.0.8        # Para gerar a nova página de capa
+watchdog==3.0.0         # Para monitorar a pasta input automaticamente
