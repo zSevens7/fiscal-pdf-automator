@@ -25,7 +25,8 @@ class Extractor:
             return data
 
         # --- 1. DCTFWEB (Capa e Dados) ---
-        if "DCTFWeb" in clean_text and "Recibo" in clean_text:
+        # ATUALIZADO: Procura a frase completa para não confundir com o Resumo de Débitos
+        if "Recibo de Entrega da Declaração" in clean_text and "DCTFWeb" in clean_text:
             data["type"] = "DCTFWEB"
             
             # CNPJ
@@ -45,7 +46,8 @@ class Extractor:
                 data["empresa"] = "HYDRA ENGENHARIA E SANEAMENTO LTDA"
 
         # --- 2. RESUMO DE CRÉDITOS ---
-        elif "RESUMO DE CRÉDITOS" in clean_text:
+        # ATUALIZADO: Aceita "RELATÓRIO DE CRÉDITOS" também
+        elif "RESUMO DE CRÉDITOS" in clean_text or "RELATÓRIO DE CRÉDITOS" in clean_text:
             data["type"] = "RESUMO_CREDITO"
             # Procura valor da Compensação
             match_comp = re.search(r"Compensação\s+([\d\.]+,\d{2}|[\d\.,]+)", clean_text)

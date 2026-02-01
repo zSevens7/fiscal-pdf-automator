@@ -1,0 +1,50 @@
+============================================================
+       MANUAL DE USO - CONSOLIDADOR FISCAL (AUTOMÁTICO)
+============================================================
+
+Siga os 3 passos abaixo para gerar o relatório consolidado.
+
+------------------------------------------------------------
+PASSO 1: PREPARAÇÃO (IMPORTANTE!)
+------------------------------------------------------------
+Antes de começar uma nova empresa ou um novo mês:
+1. Abra a pasta "input".
+2. APAGUE todos os arquivos que estiverem lá dentro.
+   (Isso evita misturar documentos da empresa anterior).
+
+------------------------------------------------------------
+PASSO 2: ALIMENTAR O SISTEMA
+------------------------------------------------------------
+Coloque dentro da pasta "input" todos os PDFs da competência:
+- Recibos de Entrega (DCTFWeb)
+- Relatórios de Créditos e Débitos
+- Comprovantes de Compensação (PER/DCOMP)
+- DARFs ou Comprovantes de Pagamento extras
+
+OBS: O sistema aceita múltiplos arquivos. 
+- Se for compensação (PER/DCOMP), ele soma o valor na capa.
+- Se for DARF/Recibo, ele apenas anexa no final do relatório.
+
+------------------------------------------------------------
+PASSO 3: GERAR O RELATÓRIO
+------------------------------------------------------------
+1. Volte para a pasta principal.
+2. Dê um DUPLO CLIQUE no arquivo "executar.bat".
+3. Uma tela preta vai abrir. Aguarde ela fechar sozinha.
+
+*NOTA:* Na primeira vez que rodar, pode demorar um pouco para 
+configurar o sistema. Nas próximas, será rápido (segundos).
+
+------------------------------------------------------------
+ONDE ESTÁ O ARQUIVO FINAL?
+------------------------------------------------------------
+1. Abra a pasta "output".
+2. O arquivo estará lá com o nome: 
+   "CONSOLIDADO - NOME DA EMPRESA - MES-ANO.pdf"
+
+============================================================
+EM CASO DE ERRO
+============================================================
+Se a tela preta fechar muito rápido e não gerar o PDF:
+Verifique se os arquivos na pasta "input" são realmente PDFs 
+válidos e se não estão corrompidos.
